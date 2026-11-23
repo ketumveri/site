@@ -43,6 +43,7 @@ section h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:28px}
 .kart{background:#fff;border:1px solid #E4E1D8;border-radius:16px;padding:22px 24px}
 .kart .no{width:32px;height:32px;border-radius:50%;background:#14213D;color:#F7F6F2;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;margin-bottom:12px}
 .kart h3{font-size:19px;margin-bottom:6px}
+#ozellikler .kart h3{font-size:18px}
 .kart p{margin:0;color:#4A5568;font-size:16px}
 .kurulum{background:#EFEDE6}
 .adimlar{counter-reset:a;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;max-width:760px}
@@ -64,7 +65,7 @@ footer p{margin:0;max-width:34rem}
       <svg width="40" height="40" viewBox="0 0 100 100" role="img" aria-label="Ketum logosu"><rect width="100" height="100" rx="22" fill="#F7F6F2"/><rect x="18" y="27" width="64" height="9" rx="4.5" fill="#14213D"/><rect x="18" y="45.5" width="46" height="11" rx="2" fill="#E9A23B"/><rect x="18" y="66" width="52" height="9" rx="4.5" fill="#14213D"/></svg>
       <span>Ketum</span>
     </a>
-    <nav aria-label="Sayfa bölümleri"><a href="#nasil">Nasıl çalışır</a><a href="#kurulum">Kurulum</a><a href="#gizlilik">Gizlilik</a></nav>
+    <nav aria-label="Sayfa bölümleri"><a href="#nasil">Nasıl çalışır</a><a href="#ozellikler">Özellikler</a><a href="#kurulum">Kurulum</a><a href="#gizlilik">Gizlilik</a></nav>
   </div>
 </header>
 
@@ -77,11 +78,11 @@ footer p{margin:0;max-width:34rem}
       <div><a class="indir" href="https://github.com/ketumveri/site/releases/latest/download/Ketum_Kurulum.exe">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
         Windows için indir</a></div>
-      <p class="kucuk">Windows 10 ve 11 (64 bit) · yönetici izni gerekmez · kullanmak için lisans anahtarı gerekir.<br>Anahtarınız yoksa pilot için <a href="mailto:ketumveri@hotmail.com?subject=Ketum%20pilot%20lisans%C4%B1">ketumveri@hotmail.com</a> adresine yazın.</p>
+      <p class="kucuk">Ketum 0.9 · Windows 10 ve 11 (64 bit) · yönetici izni gerekmez · kullanmak için lisans anahtarı gerekir.<br>Anahtarınız yoksa pilot için <a href="mailto:ketumveri@hotmail.com?subject=Ketum%20pilot%20lisans%C4%B1">ketumveri@hotmail.com</a> adresine yazın.</p>
     </div>
     <div class="ornek" aria-label="Maskelenmiş metin örneği">
-      <div class="b">Yapay zekâya giden metin</div>
-      Müvekkil <span class="c ck">DAVACI_1</span> ile davalı <span class="c ck">DAVALI_1</span> arasında kira sözleşmesi bulunmaktadır. Ödemeler <span class="c cf">IBAN_1</span> numaralı hesaba yapılmaktaydı. Tanık <span class="c ck">TANIK_1</span>, <span class="c ck">DAVALI_1</span>'un taşınmazı terk ettiğini görmüştür. Davacının adresi <span class="c ci">ADRES_1</span>, kimlik numarası <span class="c cm">TCKN_1</span>.
+      <div class="b">Paylaşılan metin · uydurma örnek</div>
+      Merhaba, <span class="c ck">[KİŞİ_1]</span> Hanım'ın başvurusu ektedir. T.C. kimlik numarası <span class="c cm">[TCKN_1]</span>, telefonu <span class="c ci">[TELEFON_1]</span>, adresi <span class="c ci">[ADRES_1]</span>. Ödeme <span class="c cf">[IBAN_1]</span> hesabına yapılacak. Sipariş no: <span class="c cm">[SİPARİŞ_NO_1]</span>. Bilgi için <span class="c ck">[KİŞİ_2]</span> ile görüşebilirsiniz.
     </div>
   </div>
 </div>
@@ -93,6 +94,20 @@ footer p{margin:0;max-width:34rem}
       <div class="kart"><div class="no">1</div><h3>Maskeleyin</h3><p>Belgeyi ya da tabloyu sürükleyin, sektörünüzü seçin: genel, hukuk, müşteri hizmetleri, muhasebe ya da insan kaynakları. Aynı kişi belge boyunca aynı etiketi alır; Excel'de sütunlar başlığa göre maskelenir.</p></div>
       <div class="kart"><div class="no">2</div><h3>Kontrol edip paylaşın</h3><p>İşaretlenen yerleri gözden geçirin, kaçanı fareyle seçip maskeleyin. Maskeli belgeyi kopyalayın ya da Word, Excel veya CSV olarak kaydedin.</p></div>
       <div class="kart"><div class="no">3</div><h3>Geri çevirin</h3><p>Gelen cevabı Ketum'a yapıştırın. Etiketler Türkçe ekleriyle gerçek değerlere döner: <b>[KİŞİ_1]'e</b> → <b>Ayşe Demir'e</b>. Cevap günler sonra gelse de çalışmanız Son çalışmalar listesinde bekler.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ozellikler" style="padding-top:0">
+  <div class="ic">
+    <h2>Neler yapabilirsiniz</h2>
+    <div class="izgara">
+      <div class="kart"><h3>Her türlü belge</h3><p>Word (.docx), Excel (.xlsx), CSV, PDF, UYAP (.udf) ve metin dosyaları. Word'de başlıklar ve tablolar korunur; Excel'de sayılar ve tarihler yerinde kalır.</p></div>
+      <div class="kart"><h3>Sektörünüze göre</h3><p>Genel, hukuk, müşteri hizmetleri, muhasebe ve finans, insan kaynakları. Hukukta davacı, davalı, tanık gibi roller; müşteri hizmetlerinde sipariş ve kargo numaraları; insan kaynaklarında sicil numarası ve ücret ayrıca maskelenir.</p></div>
+      <div class="kart"><h3>Tablolarda sütun sütun</h3><p>"Ad Soyad", "TC", "Telefon" gibi başlıklı sütunlar bütünüyle maskelenir; tutar ve tarih sütunlarına dokunulmaz. Her sütunun ayarını siz de değiştirebilirsiniz.</p></div>
+      <div class="kart"><h3>Kontrol sizde</h3><p>Maskelenenleri arayın, türe göre süzün, metinde yerine gidin. Kaçanı fareyle seçip maskeleyin, yanlış maskeyi kaldırın. Her zaman ya da hiç maskelenmeyecek ifadeler için kendi listelerinizi tutun.</p></div>
+      <div class="kart"><h3>Kaydedin ya da kopyalayın</h3><p>Maskeli belgeyi Word, Excel, CSV, PDF ya da metin olarak kaydedin; yapay zekâ aracına yapıştırmak için tek tıkla kopyalayın.</p></div>
+      <div class="kart"><h3>Cevabı geri çevirin</h3><p>Gelen metni yapıştırın ya da gelen dosyayı bırakın: etiketler gerçek değerlere döner, dosya aynı biçimde kaydedilir. Çalışmanız Son çalışmalar listesinde bekler.</p></div>
     </div>
   </div>
 </section>
@@ -123,9 +138,9 @@ footer p{margin:0;max-width:34rem}
     <div>
       <h2>Bilmeniz gerekenler</h2>
       <ul class="liste">
-        <li>Otomatik maskeleme ilk geçiştir. Göndermeden önce metni okuyun: sağlık bilgisi, işyeri, küçük yer adları ve kişiyi dolaylı tanıtan anlatımlar otomatik maskelenmeyebilir.</li>
-        <li>Maskeleme anonimleştirme değildir; maskelenmiş metin hâlâ kişisel veri sayılabilir. Yapay zekâ aracının kullanım koşullarını ve kurumunuzun politikasını ayrıca değerlendirin.</li>
-        <li>Taranmış (resim) PDF'ler ve eski .doc/.xls dosyaları şimdilik desteklenmez; Word ya da Excel'de yeni biçimde kaydedip açın.</li>
+        <li>Otomatik maskeleme ilk geçiştir. Paylaşmadan önce göz atın: kaçan bir bilgi görürseniz fareyle seçip maskeleyin. Sağlık bilgisi, işyeri ve küçük yer adları, takma adlar ve kişiyi dolaylı tanıtan anlatımlar otomatik maskelenmeyebilir.</li>
+        <li>Maskeleme anonimleştirme değildir; maskelenmiş metin "riski azaltılmış kişisel veri" olarak değerlendirilmelidir. Yapay zekâ aracının kullanım koşullarını ve kurumunuzun politikasını ayrıca değerlendirin.</li>
+        <li>Taranmış (resim) PDF'ler ve eski .doc/.xls dosyaları şimdilik desteklenmez; Word ya da Excel'de yeni biçimde kaydedip açın. PDF olarak kaydetme tablolarda en fazla 5.000 satıra kadar yapılır.</li>
       </ul>
     </div>
   </div>
