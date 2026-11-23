@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ketum.com.tr/sitemap.xml
