@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word belgesindeki kişisel veriler nasıl gizlenir? Paylaşmadan önce 6 kontrol</title>
+<meta name="description" content="Word belgesini paylaşmadan önce adları ve kimlik bilgilerini gizlemenin doğru yolu: Bul ve Değiştir'in sınırları, siyah kutuyla karartmanın neden işe yaramadığı, izlenen değişiklikler, belge özellikleri ve Belge Denetçisi.">
+<meta property="og:title" content="Word belgesindeki kişisel veriler nasıl gizlenir? Paylaşmadan önce 6 kontrol">
+<meta property="og:description" content="Word belgesini paylaşmadan önce adları ve kimlik bilgilerini gizlemenin doğru yolu: Bul ve Değiştir'in sınırları, siyah kutuyla karartmanın neden işe yaramadığı, izlenen değişiklikler, belge özellikleri ve Belge Denetçisi.">
+<meta property="og:url" content="https://ketum.com.tr/rehber/word-kisisel-veri-gizleme/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://ketum.com.tr/paylasim.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Ketum">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ketum.com.tr/rehber/word-kisisel-veri-gizleme/">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}body{margin:0;background:#F7F6F2;color:#14213D;font-family:'Inter',Arial,sans-serif;font-size:18px;line-height:1.7}
+a{color:#14213D;text-underline-offset:3px}a:hover{color:#0B1426}
+h1,h2,h3{font-family:'DM Sans',Arial,sans-serif;letter-spacing:-0.015em;line-height:1.25}
+.ust{background:#14213D;color:#F7F6F2}.ust .ic{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.ic{max-width:1120px;margin:0 auto;padding:0 24px}
+.logo{display:flex;align-items:center;gap:12px;color:#F7F6F2;text-decoration:none;min-height:44px}.logo span{font-family:'DM Sans',Arial,sans-serif;font-size:24px;font-weight:700}
+.ust nav a{color:#DDE1E8;text-decoration:none;padding:10px 0;margin-left:20px;font-size:15px}.ust nav a.etkin{color:#fff;font-weight:600}
+.yazi{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+.yol{font-size:14px;color:#6B7280;margin:0 0 12px}.yol a{color:#6B7280}
+h1{font-size:clamp(1.9rem,4vw,2.6rem);margin:0 0 14px}
+.ozet{font-size:20px;color:#4A5568;margin:0 0 10px}
+.tarih{font-size:14px;color:#6B7280;margin:0 0 32px}
+h2{font-size:1.55rem;margin:44px 0 12px}h3{font-size:1.2rem;margin:28px 0 8px}
+p{margin:0 0 16px}ul,ol{padding-left:24px;margin:0 0 16px}li{margin:6px 0}
+.kutu{background:#fff;border:1px solid #E4E1D8;border-radius:14px;padding:18px 22px;margin:22px 0}
+.kutu.kisa{background:#14213D;color:#F7F6F2;border-color:#14213D}.kutu.kisa b{color:#E9A23B}
+.kutu.uyari{background:#FFF6E5;border-color:#F3D9A6;color:#5C3D0C;font-size:16px}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:16px;background:#fff}th,td{border:1px solid #E4E1D8;padding:10px 12px;text-align:left;vertical-align:top}th{background:#F1EFE8}
+.ornek{font-family:Consolas,'Cascadia Mono',monospace;font-size:15px;background:#fff;border:1px solid #E4E1D8;border-radius:10px;padding:12px 14px;margin:8px 0 16px;white-space:pre-wrap}
+.cagri{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#fff;border:1px solid #E4E1D8;border-radius:16px;padding:22px 24px;margin:40px 0}
+.cagri a.btn{background:#E9A23B;color:#14213D;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px}
+.kaynak{font-size:15px;color:#4A5568}
+.kartlar{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:24px}
+.kartlar a{display:block;background:#fff;border:1px solid #E4E1D8;border-radius:16px;padding:22px 24px;text-decoration:none}
+.kartlar a:hover{border-color:#2C3D63}.kartlar h2{font-size:1.25rem;margin:0 0 8px}.kartlar p{color:#4A5568;font-size:16px;margin:0}
+footer{border-top:1px solid #E4E1D8}footer .ic{padding-top:28px;padding-bottom:44px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px;font-size:14px;color:#4A5568}footer p{margin:0;max-width:34rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Word belgesindeki kişisel veriler nasıl gizlenir? Paylaşmadan önce 6 kontrol", "description": "Word belgesini paylaşmadan önce adları ve kimlik bilgilerini gizlemenin doğru yolu: Bul ve Değiştir'in sınırları, siyah kutuyla karartmanın neden işe yaramadığı, izlenen değişiklikler, belge özellikleri ve Belge Denetçisi.", "datePublished": "2026-11-24", "dateModified": "2026-11-24", "inLanguage": "tr", "image": "https://ketum.com.tr/paylasim.png", "mainEntityOfPage": "https://ketum.com.tr/rehber/word-kisisel-veri-gizleme/", "author": {"@type": "Organization", "name": "Ketum", "url": "https://ketum.com.tr/"}, "publisher": {"@type": "Organization", "name": "Ketum", "logo": {"@type": "ImageObject", "url": "https://ketum.com.tr/logo.png"}}}</script>
+</head>
+<body>
+<header class="ust"><div class="ic">
+<a class="logo" href="../../"><svg width="40" height="40" viewBox="0 0 100 100" role="img" aria-label="Ketum logosu"><rect width="100" height="100" rx="22" fill="#F7F6F2"/><rect x="18" y="27" width="64" height="9" rx="4.5" fill="#14213D"/><rect x="18" y="45.5" width="46" height="11" rx="2" fill="#E9A23B"/><rect x="18" y="66" width="52" height="9" rx="4.5" fill="#14213D"/></svg><span>Ketum</span></a>
+<nav aria-label="Site"><a href="../../rehber/" class="etkin">Rehber</a><a href="../../indir/">İndir</a><a href="../../#iletisim">İletişim</a></nav>
+</div></header>
+<main>
+<article class="yazi">
+<p class="yol"><a href="../">Rehber</a> › Word'de kişisel verileri gizleme</p>
+<h1>Word belgesindeki kişisel veriler nasıl gizlenir? Paylaşmadan önce 6 kontrol</h1>
+<p class="ozet">Ekranda görünmeyen bir bilgi, belgede olmadığı anlamına gelmez. Bir dilekçeyi, sözleşmeyi ya da raporu dışarıya göndermeden önce bakılacak altı yer.</p>
+<p class="tarih">Güncelleme: 24 Kasım 2026 · Okuma süresi: 5 dakika</p>
+
+<div class="kutu kisa"><b>Kısa cevap:</b> Metni gerçekten değiştirin ya da silin; üstünü kapatmayın. Ardından izlenen değişiklikleri ve açıklamaları temizleyin, üst ve alt bilgiyi okuyun, <b>Dosya › Bilgi › Sorunları Denetle › Belgeyi İncele</b> ile gizli bilgileri kaldırın. Bunu özgün dosyanın bir kopyası üzerinde yapın.</div>
+
+<h2>1. Siyah kutu ve vurgulama karartma değildir</h2>
+<p>Adın üstüne siyah bir şekil koymak ya da metni siyahla vurgulamak yalnızca görüntüyü değiştirir. Metin belgede durur: kopyalanabilir, aranabilir, şekil kaydırılınca görünür. PDF'e çevirdiğinizde de çoğu zaman metin katmanında kalır. Gizlemenin tek güvenilir yolu, bilgiyi metinden <b>çıkarmak ya da bir etiketle değiştirmektir</b>.</p>
+
+<h2>2. Bul ve Değiştir: işe yarar, ama eksik kalır</h2>
+<p><b>Ctrl + H</b> ile "Ayşe Demir"i "[KİŞİ_1]" yapmak hızlıdır. Ama tek tek bulmanız gereken yazımlar vardır:</p>
+<ul>
+<li>Büyük harfli yazım: <code>AYŞE DEMİR</code></li>
+<li>Ekler ve tek başına soyad: <code>Demir'in</code>, <code>Davalı Demir</code></li>
+<li>Kısaltmalar ve baş harfler: <code>A. Demir</code></li>
+<li>Numaraların farklı yazımları: <code>0532 412 18 90</code>, <code>05324121890</code></li>
+</ul>
+<p>Üst bilgi, alt bilgi, dipnotlar, metin kutuları ve tablolar da ayrıca kontrol edilmeli.</p>
+
+<h2>3. İzlenen değişiklikler ve açıklamalar</h2>
+<p>"Değişiklikleri İzle" açıkken sildiğiniz bir ad, belgede silinmiş düzeltme olarak durur ve karşı taraf onu görebilir. Açıklamalar (yorumlar) da yazanın adını ve içeriğini taşır. <b>Gözden Geçir</b> sekmesinden tüm değişiklikleri kabul edin ya da reddedin ve açıklamaları silin.</p>
+
+<h2>4. Belge özellikleri</h2>
+<p>Belgeyi oluşturan ve en son kaydeden kişinin adı, Office tarafından belge özelliklerinde otomatik olarak tutulur. Büro ya da şirket adı, şablon adı ve e-posta bilgileri de burada olabilir.</p>
+
+<h2>5. Belge Denetçisi</h2>
+<p>Windows için Word'de <b>Dosya › Bilgi › Sorunları Denetle › Belgeyi İncele</b> yolundaki Belge Denetçisi, Microsoft'un açıklamasına göre şunları bulup kaldırabiliyor:</p>
+<ul>
+<li>açıklamalar, izlenen değişiklik düzeltmeleri, sürüm bilgileri ve mürekkep notları,</li>
+<li>belge özellikleri ve kişisel bilgiler (kullanıcı adları dahil),</li>
+<li>üst bilgi, alt bilgi ve filigranlar,</li>
+<li>gizli metin biçimiyle gizlenmiş metin ve görünmez nesneler.</li>
+</ul>
+<p>İki uyarı: Microsoft, kaldırılan bilgilerin her zaman geri getirilemediği için Belge Denetçisi'nin <b>özgün belgenin bir kopyası</b> üzerinde kullanılmasını öneriyor. Denetçi ayrıca beyaz zemin üstüne beyaz yazı gibi başka yollarla gizlenmiş metni bulamıyor.</p>
+
+<h2>6. Dosya adı ve son okuma</h2>
+<p><code>Ayse_Demir_dilekce.docx</code> gibi bir dosya adı, içeriği ne kadar temizlerseniz temizleyin adı taşır. Göndermeden önce dosyayı yeniden adlandırın ve belgeyi baştan sona bir kez okuyun: "bankadaki şube müdürü", "kat maliki" gibi dolaylı anlatımlar da kişiyi tanıtabilir.</p>
+
+<h2>Daha hızlı yol: Ketum</h2>
+<p>Ketum Masaüstü, Word belgesindeki adları, T.C. kimlik, telefon, e-posta, adres, IBAN ve dosya numaralarını metinde, tablolarda, üst ve alt bilgide bulup etiketlerle değiştirir. Aynı kişinin büyük harfli ya da ekli yazımlarını aynı etikete bağlar; kaçanı fareyle seçip ekleyebilirsiniz. Kaydettiğiniz Word dosyasında başlıklar, tablolar ve paragraf düzeni korunur, yazar bilgisi temizlenir. Yapay zekâdan gelen cevap tek tıkla gerçek adlara geri çevrilir. Hepsi bilgisayarınızda, internete bağlanmadan olur.</p>
+<div class="kutu uyari"><b>Unutmayın:</b> Otomatik maskeleme bir ilk geçiştir; sağlık bilgisi, küçük harfle yazılmış adlar ve dolaylı anlatımlar kaçabilir. Paylaşmadan önce sonucu okuyun. Maskelenmiş belge de <a href="../maskeleme-anonimlestirme-farki/">anonim değildir</a>.</div>
+<div class="cagri"><div><b>Ketum Masaüstü</b><br><span style="color:#4A5568;font-size:16px">Word, Excel ve PDF belgelerindeki kişisel verileri bilgisayarınızda, internete bağlanmadan maskeleyin.</span></div><a class="btn" href="../../indir/">İndir ve dene</a></div>
+
+<h2>Kaynaklar</h2>
+<ul class="kaynak">
+<li>Microsoft Destek, <a href="https://support.microsoft.com/en-us/office/356b7b5d-77af-44fe-a07f-9aa4d085966f" rel="noopener">Remove hidden data and personal information by inspecting documents, presentations, or workbooks</a></li>
+</ul>
+<p class="kaynak">Bu yazı genel bilgilendirme amaçlıdır ve hukuki görüş değildir.</p>
+</article>
+</main>
+<footer><div class="ic">
+<span>Ketum · <a href="mailto:ketumveri@hotmail.com">ketumveri@hotmail.com</a></span>
+<p>Rehber yazıları genel bilgilendirme amaçlıdır, hukuki görüş değildir. Bu web sitesinde çerez kullanmayan ve sizi tanımlamayan bir ziyaret istatistiği aracı (Cloudflare Web Analytics) kullanılır.</p>
+</div></footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d4f85b3ae92f4b23bec7610f5724673a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
