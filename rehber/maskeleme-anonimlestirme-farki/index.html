@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maskeleme, anonimleştirme ve takma ad: farkları ne?</title>
+<meta name="description" content="Kişisel verileri etiketlemek onları anonim yapar mı? KVKK'daki anonim hale getirme tanımı, takma ad (pseudonymization) kavramı ve maskelemenin gerçekte ne sağladığı, örneklerle.">
+<meta property="og:title" content="Maskeleme, anonimleştirme ve takma ad: farkları ne?">
+<meta property="og:description" content="Kişisel verileri etiketlemek onları anonim yapar mı? KVKK'daki anonim hale getirme tanımı, takma ad (pseudonymization) kavramı ve maskelemenin gerçekte ne sağladığı, örneklerle.">
+<meta property="og:url" content="https://ketum.com.tr/rehber/maskeleme-anonimlestirme-farki/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://ketum.com.tr/paylasim.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Ketum">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ketum.com.tr/rehber/maskeleme-anonimlestirme-farki/">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}body{margin:0;background:#F7F6F2;color:#14213D;font-family:'Inter',Arial,sans-serif;font-size:18px;line-height:1.7}
+a{color:#14213D;text-underline-offset:3px}a:hover{color:#0B1426}
+h1,h2,h3{font-family:'DM Sans',Arial,sans-serif;letter-spacing:-0.015em;line-height:1.25}
+.ust{background:#14213D;color:#F7F6F2}.ust .ic{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.ic{max-width:1120px;margin:0 auto;padding:0 24px}
+.logo{display:flex;align-items:center;gap:12px;color:#F7F6F2;text-decoration:none;min-height:44px}.logo span{font-family:'DM Sans',Arial,sans-serif;font-size:24px;font-weight:700}
+.ust nav a{color:#DDE1E8;text-decoration:none;padding:10px 0;margin-left:20px;font-size:15px}.ust nav a.etkin{color:#fff;font-weight:600}
+.yazi{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+.yol{font-size:14px;color:#6B7280;margin:0 0 12px}.yol a{color:#6B7280}
+h1{font-size:clamp(1.9rem,4vw,2.6rem);margin:0 0 14px}
+.ozet{font-size:20px;color:#4A5568;margin:0 0 10px}
+.tarih{font-size:14px;color:#6B7280;margin:0 0 32px}
+h2{font-size:1.55rem;margin:44px 0 12px}h3{font-size:1.2rem;margin:28px 0 8px}
+p{margin:0 0 16px}ul,ol{padding-left:24px;margin:0 0 16px}li{margin:6px 0}
+.kutu{background:#fff;border:1px solid #E4E1D8;border-radius:14px;padding:18px 22px;margin:22px 0}
+.kutu.kisa{background:#14213D;color:#F7F6F2;border-color:#14213D}.kutu.kisa b{color:#E9A23B}
+.kutu.uyari{background:#FFF6E5;border-color:#F3D9A6;color:#5C3D0C;font-size:16px}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:16px;background:#fff}th,td{border:1px solid #E4E1D8;padding:10px 12px;text-align:left;vertical-align:top}th{background:#F1EFE8}
+.ornek{font-family:Consolas,'Cascadia Mono',monospace;font-size:15px;background:#fff;border:1px solid #E4E1D8;border-radius:10px;padding:12px 14px;margin:8px 0 16px;white-space:pre-wrap}
+.cagri{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#fff;border:1px solid #E4E1D8;border-radius:16px;padding:22px 24px;margin:40px 0}
+.cagri a.btn{background:#E9A23B;color:#14213D;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px}
+.kaynak{font-size:15px;color:#4A5568}
+.kartlar{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:24px}
+.kartlar a{display:block;background:#fff;border:1px solid #E4E1D8;border-radius:16px;padding:22px 24px;text-decoration:none}
+.kartlar a:hover{border-color:#2C3D63}.kartlar h2{font-size:1.25rem;margin:0 0 8px}.kartlar p{color:#4A5568;font-size:16px;margin:0}
+footer{border-top:1px solid #E4E1D8}footer .ic{padding-top:28px;padding-bottom:44px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px;font-size:14px;color:#4A5568}footer p{margin:0;max-width:34rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Maskeleme, anonimleştirme ve takma ad: farkları ne?", "description": "Kişisel verileri etiketlemek onları anonim yapar mı? KVKK'daki anonim hale getirme tanımı, takma ad (pseudonymization) kavramı ve maskelemenin gerçekte ne sağladığı, örneklerle.", "datePublished": "2026-11-24", "dateModified": "2026-11-24", "inLanguage": "tr", "image": "https://ketum.com.tr/paylasim.png", "mainEntityOfPage": "https://ketum.com.tr/rehber/maskeleme-anonimlestirme-farki/", "author": {"@type": "Organization", "name": "Ketum", "url": "https://ketum.com.tr/"}, "publisher": {"@type": "Organization", "name": "Ketum", "logo": {"@type": "ImageObject", "url": "https://ketum.com.tr/logo.png"}}}</script>
+</head>
+<body>
+<header class="ust"><div class="ic">
+<a class="logo" href="../../"><svg width="40" height="40" viewBox="0 0 100 100" role="img" aria-label="Ketum logosu"><rect width="100" height="100" rx="22" fill="#F7F6F2"/><rect x="18" y="27" width="64" height="9" rx="4.5" fill="#14213D"/><rect x="18" y="45.5" width="46" height="11" rx="2" fill="#E9A23B"/><rect x="18" y="66" width="52" height="9" rx="4.5" fill="#14213D"/></svg><span>Ketum</span></a>
+<nav aria-label="Site"><a href="../../rehber/" class="etkin">Rehber</a><a href="../../indir/">İndir</a><a href="../../#iletisim">İletişim</a></nav>
+</div></header>
+<main>
+<article class="yazi">
+<p class="yol"><a href="../">Rehber</a> › Maskeleme ve anonimleştirme</p>
+<h1>Maskeleme, anonimleştirme ve takma ad: farkları ne?</h1>
+<p class="ozet">"Adları sildik, artık anonim." Sık duyulan ama çoğu zaman yanlış bir cümle. Üç kavramı ayırmak, hangi verinin hâlâ korunması gerektiğini anlamanın en kısa yolu.</p>
+<p class="tarih">Güncelleme: 24 Kasım 2026 · Okuma süresi: 4 dakika</p>
+
+<div class="kutu kisa"><b>Kısa cevap:</b> Anonim hale getirilmiş veri, hiçbir yolla bir kişiye bağlanamaz ve artık kişisel veri sayılmaz. Maskelenmiş ya da takma adlı veri ise bir anahtarla veya başka bilgilerle kişiye geri bağlanabilir; bu yüzden hâlâ kişisel veridir. Maskeleme riski azaltır, ama korumayı bitirmez.</div>
+
+<h2>Anonim hale getirme</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu, anonim hale getirmeyi kişisel verilerin başka verilerle eşleştirilse bile hiçbir şekilde kimliği belirli ya da belirlenebilir bir kişiyle ilişkilendirilemeyecek hale getirilmesi olarak tanımlıyor. Ölçüt çok yüksek: yalnızca adın silinmesi yetmez; ilçe, yaş, meslek, tarih gibi bilgiler bir araya geldiğinde kişi yeniden bulunabiliyorsa veri anonim değildir.</p>
+<p>Gerçekten anonim hale getirilmiş veri artık kişisel veri sayılmaz; Kanun'un kuralları ona uygulanmaz. Bu yüzden "anonim" kelimesini kullanmadan önce dikkatli olmak gerekir.</p>
+
+<h2>Takma ad (pseudonymization)</h2>
+<p>Avrupa Birliği'nin veri koruma tüzüğü (GDPR) takma ad kullanmayı ayrı bir kavram olarak tanımlıyor: veri, ek bir bilgi (örneğin hangi etiketin kime ait olduğunu gösteren bir tablo) olmadan kişiye bağlanamayacak şekilde işlenir; o ek bilgi ayrı tutulur ve korunur. Tüzüğe göre takma adlı veri <b>hâlâ kişisel veridir</b>, çünkü ek bilgiyle kişiye geri bağlanabilir.</p>
+<p>KVKK'da takma ad için ayrı bir tanım yok; ancak Kanun'un GDPR ile uyumlaştırılması Türkiye'nin gündeminde. Pratikte aynı mantık geçerli: geri dönüş anahtarı olan veri, kişisel veridir.</p>
+
+<h2>Maskeleme</h2>
+<p>Maskeleme, kişiyi tanıtan bir bilginin yerine bir etiket, yıldız ya da sahte bir değer koymaktır. Kullanılan yönteme göre iki farklı şey olabilir:</p>
+<ul>
+<li><b>Geri çevrilebilir maskeleme:</b> "Ayşe Demir" her yerde <code>[KİŞİ_1]</code> olur ve hangi etiketin kime ait olduğu bir yerde saklanır. Bu, takma ada çok yakındır. Avantajı, yapay zekâdan gelen cevabı gerçek adlara geri çevirebilmenizdir.</li>
+<li><b>Geri dönüşsüz maskeleme:</b> Ad <code>***</code> olur ve hiçbir yerde saklanmaz. Bu, anonimleştirmeye bir adım yaklaşır; ama metindeki dolaylı bilgiler kişiyi hâlâ tanıtıyorsa veri yine de anonim sayılmaz.</li>
+</ul>
+
+<h2>Bir örnekle</h2>
+<p><b>Özgün metin</b></p>
+<div class="ornek">Ayşe Demir (T.C. 10000000146) Seyhan'daki bir bankada çalışıyor; 14.02.1980 doğumlu, telefonu 0532 412 18 90.</div>
+<p><b>Maskelenmiş</b> (Ketum'un yaptığı gibi)</p>
+<div class="ornek">[KİŞİ_1] (T.C. [TCKN_1]) [YER_1]'daki bir bankada çalışıyor; [DOĞUM_TARİHİ_1] doğumlu, telefonu [TELEFON_1].</div>
+<p>Doğrudan tanıtıcı bilgiler gitti. Ama "bir bankada çalışıyor" bilgisi, ilçe ve yaş grubuyla birlikte kişiyi daraltabilir ve etiketlerin karşılığı bilgisayarınızda duruyor. Bu yüzden bu metin <b>riski azaltılmış kişisel veridir</b>, anonim değildir.</p>
+<p><b>Anonimleştirmeye yaklaşan hâli</b></p>
+<div class="ornek">Bir banka çalışanı, 40'lı yaşlarında.</div>
+<p>Yalnızca işe yarayan genel bilgi kaldı; geri dönüş anahtarı yok. Bir yapay zekâdan genel bir görüş almak için çoğu zaman bu kadarı yeter.</p>
+
+<h2>Yan yana</h2>
+<table>
+<tr><th></th><th>Anonim hale getirme</th><th>Takma ad / geri çevrilebilir maskeleme</th></tr>
+<tr><td>Kişiye geri bağlanabilir mi?</td><td>Hayır, hiçbir yolla</td><td>Evet, anahtarla ya da başka bilgilerle</td></tr>
+<tr><td>Hâlâ kişisel veri mi?</td><td>Hayır</td><td>Evet</td></tr>
+<tr><td>Cevabı gerçek adlarla geri alabilir misiniz?</td><td>Hayır</td><td>Evet</td></tr>
+<tr><td>Ne zaman uygun?</td><td>İstatistik, eğitim verisi, kalıcı paylaşım</td><td>Yapay zekâdan belgeye özel yardım almak, dış destek, iş ortağıyla çalışmak</td></tr>
+</table>
+
+<h2>Bu, pratikte ne demek?</h2>
+<ul>
+<li>Maskelenmiş metni yapay zekâya göndermek, ham metni göndermekten çok daha az risklidir. KVKK'nın iş yerleri dokümanı da kişiyi tanıtan ayrıntılar yerine genel ifadelerin kullanılmasını öneriyor.</li>
+<li>Ama maskelenmiş metin hâlâ kişisel veri olarak korunmalı: gereksiz yere paylaşılmamalı, aracın kullanım şartları okunmalı.</li>
+<li>Gerçekten anonim bir çıktı gerekiyorsa, maskelemenin üstüne dolaylı bilgileri de genelleştirin ya da çıkarın.</li>
+</ul>
+<div class="kutu uyari">Ketum bu yüzden hiçbir yerde "anonimleştirir" ya da "KVKK'ya uyumlu hale getirir" demiyor. Ketum kişiyi tanıtan bilgileri maskeler; neyin gönderileceğine siz karar verirsiniz.</div>
+<div class="cagri"><div><b>Ketum Masaüstü</b><br><span style="color:#4A5568;font-size:16px">Word, Excel ve PDF belgelerindeki kişisel verileri bilgisayarınızda, internete bağlanmadan maskeleyin.</span></div><a class="btn" href="../../indir/">İndir ve dene</a></div>
+
+<h2>Kaynaklar</h2>
+<ul class="kaynak">
+<li><a href="https://www.mevzuat.gov.tr/mevzuatmetin/1.5.6698.pdf" rel="noopener">6698 sayılı Kişisel Verilerin Korunması Kanunu</a>, madde 3 (tanımlar)</li>
+<li><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" rel="noopener">AB Genel Veri Koruma Tüzüğü (GDPR)</a>, madde 4(5) ve gerekçe 26</li>
+<li>KVKK, <a href="https://www.kvkk.gov.tr/Icerik/8674/is-yerlerinde-uretken-yapay-zeka-araclarinin-kullanimi" rel="noopener">İş Yerlerinde Üretken Yapay Zekâ Araçlarının Kullanımı</a> (5 Mart 2026)</li>
+</ul>
+<p class="kaynak">Bu yazı genel bilgilendirme amaçlıdır ve hukuki görüş değildir. Kendi durumunuz için bir avukata ya da veri koruma uzmanına danışın.</p>
+</article>
+</main>
+<footer><div class="ic">
+<span>Ketum · <a href="mailto:ketumveri@hotmail.com">ketumveri@hotmail.com</a></span>
+<p>Rehber yazıları genel bilgilendirme amaçlıdır, hukuki görüş değildir. Bu web sitesinde çerez kullanmayan ve sizi tanımlamayan bir ziyaret istatistiği aracı (Cloudflare Web Analytics) kullanılır.</p>
+</div></footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d4f85b3ae92f4b23bec7610f5724673a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

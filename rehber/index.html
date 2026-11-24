@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rehber – Yapay zekâ ve kişisel veri | Ketum</title>
+<meta name="description" content="Yapay zekâ araçlarını kişisel verileri riske atmadan kullanmak için kısa, kaynaklı rehber yazılar: KVKK, maskeleme, anonimleştirme.">
+<meta property="og:title" content="Rehber – Yapay zekâ ve kişisel veri | Ketum">
+<meta property="og:description" content="Yapay zekâ araçlarını kişisel verileri riske atmadan kullanmak için kısa, kaynaklı rehber yazılar: KVKK, maskeleme, anonimleştirme.">
+<meta property="og:url" content="https://ketum.com.tr/rehber/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://ketum.com.tr/paylasim.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Ketum">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ketum.com.tr/rehber/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}body{margin:0;background:#F7F6F2;color:#14213D;font-family:'Inter',Arial,sans-serif;font-size:18px;line-height:1.7}
+a{color:#14213D;text-underline-offset:3px}a:hover{color:#0B1426}
+h1,h2,h3{font-family:'DM Sans',Arial,sans-serif;letter-spacing:-0.015em;line-height:1.25}
+.ust{background:#14213D;color:#F7F6F2}.ust .ic{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.ic{max-width:1120px;margin:0 auto;padding:0 24px}
+.logo{display:flex;align-items:center;gap:12px;color:#F7F6F2;text-decoration:none;min-height:44px}.logo span{font-family:'DM Sans',Arial,sans-serif;font-size:24px;font-weight:700}
+.ust nav a{color:#DDE1E8;text-decoration:none;padding:10px 0;margin-left:20px;font-size:15px}.ust nav a.etkin{color:#fff;font-weight:600}
+.yazi{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+.yol{font-size:14px;color:#6B7280;margin:0 0 12px}.yol a{color:#6B7280}
+h1{font-size:clamp(1.9rem,4vw,2.6rem);margin:0 0 14px}
+.ozet{font-size:20px;color:#4A5568;margin:0 0 10px}
+.tarih{font-size:14px;color:#6B7280;margin:0 0 32px}
+h2{font-size:1.55rem;margin:44px 0 12px}h3{font-size:1.2rem;margin:28px 0 8px}
+p{margin:0 0 16px}ul,ol{padding-left:24px;margin:0 0 16px}li{margin:6px 0}
+.kutu{background:#fff;border:1px solid #E4E1D8;border-radius:14px;padding:18px 22px;margin:22px 0}
+.kutu.kisa{background:#14213D;color:#F7F6F2;border-color:#14213D}.kutu.kisa b{color:#E9A23B}
+.kutu.uyari{background:#FFF6E5;border-color:#F3D9A6;color:#5C3D0C;font-size:16px}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:16px;background:#fff}th,td{border:1px solid #E4E1D8;padding:10px 12px;text-align:left;vertical-align:top}th{background:#F1EFE8}
+.ornek{font-family:Consolas,'Cascadia Mono',monospace;font-size:15px;background:#fff;border:1px solid #E4E1D8;border-radius:10px;padding:12px 14px;margin:8px 0 16px;white-space:pre-wrap}
+.cagri{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#fff;border:1px solid #E4E1D8;border-radius:16px;padding:22px 24px;margin:40px 0}
+.cagri a.btn{background:#E9A23B;color:#14213D;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px}
+.kaynak{font-size:15px;color:#4A5568}
+.kartlar{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:24px}
+.kartlar a{display:block;background:#fff;border:1px solid #E4E1D8;border-radius:16px;padding:22px 24px;text-decoration:none}
+.kartlar a:hover{border-color:#2C3D63}.kartlar h2{font-size:1.25rem;margin:0 0 8px}.kartlar p{color:#4A5568;font-size:16px;margin:0}
+footer{border-top:1px solid #E4E1D8}footer .ic{padding-top:28px;padding-bottom:44px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px;font-size:14px;color:#4A5568}footer p{margin:0;max-width:34rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Rehber", "url": "https://ketum.com.tr/rehber/"}</script>
+</head>
+<body>
+<header class="ust"><div class="ic">
+<a class="logo" href="../"><svg width="40" height="40" viewBox="0 0 100 100" role="img" aria-label="Ketum logosu"><rect width="100" height="100" rx="22" fill="#F7F6F2"/><rect x="18" y="27" width="64" height="9" rx="4.5" fill="#14213D"/><rect x="18" y="45.5" width="46" height="11" rx="2" fill="#E9A23B"/><rect x="18" y="66" width="52" height="9" rx="4.5" fill="#14213D"/></svg><span>Ketum</span></a>
+<nav aria-label="Site"><a href="../rehber/" class="etkin">Rehber</a><a href="../indir/">İndir</a><a href="../#iletisim">İletişim</a></nav>
+</div></header>
+<main>
+<section class="yazi" style="max-width:1000px">
+<h1>Rehber</h1>
+<p class="ozet">Yapay zekâ araçlarını kişisel verileri riske atmadan kullanmak için kısa, kaynaklı yazılar.</p>
+<div class="kartlar">
+<a href="yapay-zekaya-kisisel-veri/"><h2>Yapay zekâya müşteri ya da müvekkil verisi yapıştırmadan önce: KVKK ne diyor?</h2><p>KVKK'nın iş yerleri dokümanı ve avukatlar rehberi ne diyor; göndermeden önce 7 adımlık kontrol listesi.</p></a>
+<a href="maskeleme-anonimlestirme-farki/"><h2>Maskeleme, anonimleştirme ve takma ad: farkları ne?</h2><p>Etiketlemek veriyi anonim yapar mı? Tanımlar, örnekler ve yan yana karşılaştırma.</p></a>
+</div>
+</section>
+</main>
+<footer><div class="ic">
+<span>Ketum · <a href="mailto:ketumveri@hotmail.com">ketumveri@hotmail.com</a></span>
+<p>Rehber yazıları genel bilgilendirme amaçlıdır, hukuki görüş değildir. Bu web sitesinde çerez kullanmayan ve sizi tanımlamayan bir ziyaret istatistiği aracı (Cloudflare Web Analytics) kullanılır.</p>
+</div></footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d4f85b3ae92f4b23bec7610f5724673a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
