@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ücretsiz kişisel veri maskeleme aracı: T.C. kimlik, IBAN, telefon gizleme | Ketum</title>
+<meta name="description" content="Metni yapıştırın; ad soyad, T.C. kimlik, telefon, e-posta, IBAN, kart, plaka ve adresler etiketlere dönüşsün. Yapay zekâdan gelen cevabı gerçek değerlere geri çevirin. Metniniz tarayıcınızdan çıkmaz.">
+<meta property="og:title" content="Ücretsiz kişisel veri maskeleme aracı: T.C. kimlik, IBAN, telefon gizleme | Ketum">
+<meta property="og:description" content="Metni yapıştırın; ad soyad, T.C. kimlik, telefon, e-posta, IBAN, kart, plaka ve adresler etiketlere dönüşsün. Yapay zekâdan gelen cevabı gerçek değerlere geri çevirin. Metniniz tarayıcınızdan çıkmaz.">
+<meta property="og:url" content="https://ketum.com.tr/maskeleme-araci/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ketum.com.tr/paylasim.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Ketum">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ketum.com.tr/maskeleme-araci/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+html{scroll-behavior:smooth}body{margin:0;background:#F7F6F2;color:#14213D;font-family:'Inter',Arial,sans-serif;font-size:18px;line-height:1.7}
+a{color:#14213D;text-underline-offset:3px}a:hover{color:#0B1426}
+h1,h2,h3{font-family:'DM Sans',Arial,sans-serif;letter-spacing:-0.015em;line-height:1.25}
+.ust{background:#14213D;color:#F7F6F2}.ust .ic{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.ic{max-width:1120px;margin:0 auto;padding:0 24px}
+.logo{display:flex;align-items:center;gap:12px;color:#F7F6F2;text-decoration:none;min-height:44px}.logo span{font-family:'DM Sans',Arial,sans-serif;font-size:24px;font-weight:700}
+.ust nav a{color:#DDE1E8;text-decoration:none;padding:10px 0;margin-left:20px;font-size:15px}.ust nav a.etkin{color:#fff;font-weight:600}
+.yazi{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+.yol{font-size:14px;color:#6B7280;margin:0 0 12px}.yol a{color:#6B7280}
+h1{font-size:clamp(1.9rem,4vw,2.6rem);margin:0 0 14px}
+.ozet{font-size:20px;color:#4A5568;margin:0 0 10px}
+.tarih{font-size:14px;color:#6B7280;margin:0 0 32px}
+h2{font-size:1.55rem;margin:44px 0 12px}h3{font-size:1.2rem;margin:28px 0 8px}
+p{margin:0 0 16px}ul,ol{padding-left:24px;margin:0 0 16px}li{margin:6px 0}
+.kutu{background:#fff;border:1px solid #E4E1D8;border-radius:14px;padding:18px 22px;margin:22px 0}
+.kutu.kisa{background:#14213D;color:#F7F6F2;border-color:#14213D}.kutu.kisa b{color:#E9A23B}
+.kutu.uyari{background:#FFF6E5;border-color:#F3D9A6;color:#5C3D0C;font-size:16px}
+table{border-collapse:collapse;width:100%;margin:18px 0;font-size:16px;background:#fff}th,td{border:1px solid #E4E1D8;padding:10px 12px;text-align:left;vertical-align:top}th{background:#F1EFE8}
+.ornek{font-family:Consolas,'Cascadia Mono',monospace;font-size:15px;background:#fff;border:1px solid #E4E1D8;border-radius:10px;padding:12px 14px;margin:8px 0 16px;white-space:pre-wrap}
+.cagri{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;background:#fff;border:1px solid #E4E1D8;border-radius:16px;padding:22px 24px;margin:40px 0}
+.cagri a.btn{background:#E9A23B;color:#14213D;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px}
+.kaynak{font-size:15px;color:#4A5568}
+.kartlar{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:24px}
+.kartlar a{display:block;background:#fff;border:1px solid #E4E1D8;border-radius:16px;padding:22px 24px;text-decoration:none}
+.kartlar a:hover{border-color:#2C3D63}.kartlar h2{font-size:1.25rem;margin:0 0 8px}.kartlar p{color:#4A5568;font-size:16px;margin:0}
+footer{border-top:1px solid #E4E1D8}footer .ic{padding-top:28px;padding-bottom:44px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px;font-size:14px;color:#4A5568}footer p{margin:0;max-width:34rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Ketum kişisel veri maskeleme aracı", "url": "https://ketum.com.tr/maskeleme-araci/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web tarayıcısı", "inLanguage": "tr", "isAccessibleForFree": true, "description": "Metni yapıştırın; ad soyad, T.C. kimlik, telefon, e-posta, IBAN, kart, plaka ve adresler etiketlere dönüşsün. Yapay zekâdan gelen cevabı gerçek değerlere geri çevirin. Metniniz tarayıcınızdan çıkmaz.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TRY"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Metnim bir sunucuya gönderiliyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Maskeleme ve geri çevirme bu sayfanın içinde, tarayıcınızda yapılır; yazdığınız metin hiçbir yere gönderilmez ve kaydedilmez. İsterseniz sayfa açıldıktan sonra internet bağlantınızı kesip deneyebilirsiniz. Sitedeki istatistik aracı yalnızca sayfanın açıldığını sayar, metni görmez."}}, {"@type": "Question", "name": "Etiketler gerçek değerlere nasıl geri döner?", "acceptedAnswer": {"@type": "Answer", "text": "Hangi etiketin hangi değere ait olduğu yalnızca bu sekmenin belleğinde tutulur. Yapay zekâdan gelen cevabı ikinci kutuya yapıştırdığınızda etiketler gerçek değerlere döner. Sayfayı yenilediğinizde ya da kapattığınızda bu eşleme silinir."}}, {"@type": "Question", "name": "Her kişisel veriyi yakalar mı?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. T.C. kimlik, IBAN ve kart numaraları doğrulama hanesiyle, telefon, e-posta, plaka ve adresler kalıpla, adlar yaygın Türkçe ad ve soyad listesiyle bulunur. Küçük harfle yazılmış adlar, yabancı adlar, şirket adları ve sağlık bilgisi kaçabilir. Paylaşmadan önce sonucu okuyun. Maskeleme anonimleştirme değildir."}}, {"@type": "Question", "name": "Ketum Masaüstü'nün farkı ne?", "acceptedAnswer": {"@type": "Answer", "text": "Program Word, Excel, CSV, PDF ve UYAP dosyalarını biçimini bozmadan maskeler ve geri çevirir; hukuk, muhasebe, İK ve müşteri hizmetleri için ayrı ayarları, davacı-davalı-tanık gibi rolleri, kaçanı fareyle ekleme, kayıtlı çalışmalar ve parolalı paylaşım paketi vardır. O da internete bağlanmaz."}}]}</script>
+</head>
+<body>
+<header class="ust"><div class="ic">
+<a class="logo" href="../"><svg width="40" height="40" viewBox="0 0 100 100" role="img" aria-label="Ketum logosu"><rect width="100" height="100" rx="22" fill="#F7F6F2"/><rect x="18" y="27" width="64" height="9" rx="4.5" fill="#14213D"/><rect x="18" y="45.5" width="46" height="11" rx="2" fill="#E9A23B"/><rect x="18" y="66" width="52" height="9" rx="4.5" fill="#14213D"/></svg><span>Ketum</span></a>
+<nav aria-label="Site"><a href="../rehber/">Rehber</a><a href="../indir/">İndir</a><a href="../#iletisim">İletişim</a></nav>
+</div></header>
+<main>
+<style>
+.arac{max-width:1120px;margin:0 auto;padding:40px 24px 72px}
+.arac h1{font-size:clamp(1.9rem,4vw,2.6rem);margin:0 0 12px}
+.arac .ozet{max-width:46rem}
+.guven{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14.5px;color:#4A5568;margin:0 0 28px}
+.guven span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:2px;background:#E9A23B;margin-right:8px;vertical-align:middle}
+.iki-panel{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:#fff;border:1px solid #E4E1D8;border-radius:16px;padding:18px;display:flex;flex-direction:column;min-width:0}
+.panel-ust{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+.panel-ust h2{font-size:1.1rem;margin:0}
+.panel textarea{width:100%;box-sizing:border-box;min-height:300px;resize:vertical;border:1px solid #DDE1E8;border-radius:10px;padding:12px 14px;font:inherit;font-size:15.5px;line-height:1.65;color:#14213D;background:#FBFAF7}
+.panel textarea:focus{outline:2px solid #E9A23B;outline-offset:1px}
+.sonuc{min-height:300px;border:1px solid #DDE1E8;border-radius:10px;padding:12px 14px;font-size:15.5px;line-height:1.75;white-space:pre-wrap;overflow-wrap:anywhere;background:#FBFAF7;flex:1}
+.sonuc .bos{color:#8A94A6}
+.et{background:#FFF1D6;color:#8A5A12;border-radius:6px;padding:1px 5px;font-weight:600;font-size:14.5px;white-space:nowrap}
+.geri-deger{background:#E6F4EA;color:#1E6B3A;border-radius:6px;padding:1px 5px}
+.dug{border:1px solid #DDE1E8;background:#fff;color:#14213D;border-radius:10px;padding:8px 14px;font:inherit;font-size:14.5px;font-weight:600;cursor:pointer}
+.dug:hover{border-color:#2C3D63}
+.dug.ana{background:#E9A23B;border-color:#E9A23B}
+.dug:focus-visible{outline:2px solid #14213D;outline-offset:2px}
+.dugler{display:flex;flex-wrap:wrap;gap:8px}
+.ozet-cipler{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;font-size:14px}
+.ozet-cipler span{background:#EEF1F6;border-radius:999px;padding:4px 10px}
+.adim-baslik{display:flex;align-items:center;gap:12px;margin:44px 0 6px}
+.adim-baslik .no{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:9px;background:#14213D;color:#E9A23B;font-weight:700;flex:none}
+.adim-baslik h2{margin:0;font-size:1.45rem}
+.adim-aciklama{color:#4A5568;margin:0 0 16px;max-width:46rem}
+.not{font-size:14px;color:#5B6782;margin-top:10px}
+.uyari-kutu{background:#FFF6E5;border:1px solid #F3D9A6;color:#5C3D0C;border-radius:14px;padding:14px 18px;margin-top:28px;font-size:15.5px}
+.fark{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;background:#14213D;color:#F7F6F2;border-radius:20px;padding:32px;margin-top:48px}
+.fark h2{color:#F7F6F2;margin:0 0 10px;font-size:1.6rem}.fark p{color:#DDE1E8;margin:0 0 16px}
+.fark ul{margin:0;padding-left:20px;color:#DDE1E8}.fark li{margin:6px 0}
+.fark a.btn{display:inline-block;background:#E9A23B;color:#14213D;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px}
+.sss{max-width:760px;margin-top:48px}.sss h2{font-size:1.5rem}.sss h3{font-size:1.1rem;margin:22px 0 6px}.sss p{margin:0;color:#4A5568}
+.gorunmez{position:absolute;left:-9999px}
+@media (max-width:860px){.iki-panel,.fark{grid-template-columns:1fr}.panel textarea,.sonuc{min-height:200px}}
+</style>
+<div class="arac">
+<p class="yol"><a href="../">Ketum</a> › Maskeleme aracı</p>
+<h1>Ücretsiz kişisel veri maskeleme aracı</h1>
+<p class="ozet">Metni yapıştırın; ad soyad, T.C. kimlik, telefon, e-posta, IBAN, kart, plaka ve adresler anında etiketlere dönüşsün. Maskeli metni yapay zekâya verin, gelen cevabı gerçek değerlere geri çevirin.</p>
+<div class="guven"><span>Metniniz tarayıcınızdan çıkmaz</span><span>Kayıt ve üyelik yok</span><span>Sayfayı kapatınca her şey silinir</span></div>
+
+<div class="adim-baslik"><span class="no">1</span><h2>Metni maskeleyin</h2></div>
+<p class="adim-aciklama">Yazdıkça maskelenir. Etiketin üstüne gelince özgün değeri görürsünüz; aynı kişi ya da numara her yerde aynı etiketi alır.</p>
+<div class="iki-panel">
+<div class="panel">
+<div class="panel-ust"><h2><label for="girdi">Özgün metin</label></h2><div class="dugler"><button class="dug" id="ornek" type="button">Örnek metin</button><button class="dug" id="temizle" type="button">Temizle</button></div></div>
+<textarea id="girdi" spellcheck="false" placeholder="Metni buraya yapıştırın…" data-ornek="Merhaba, müvekkilimiz Ayşe Demir (T.C. 10000000146) ile davalı Burak Kılıç arasındaki kira uyuşmazlığı hakkında görüşünüzü rica ediyorum. Kılıç'ın kirayı ödemediği daire Atatürk Mah. Gül Sok. No:12 D:4 Kadıköy/İstanbul adresinde. Müvekkilimize 0532 412 18 90 numaralı telefondan ya da ayse.demir@ornekposta.com.tr adresinden ulaşılabilir. Kira bedeli TR33 0006 1005 1978 6457 8413 26 numaralı hesaba yatırılıyordu. Davalıya ait 34 ABC 482 plakalı araç otoparkta duruyor. (Bu metindeki bilgiler uydurmadır.)"></textarea>
+</div>
+<div class="panel">
+<div class="panel-ust"><h2>Maskeli metin</h2><div class="dugler"><button class="dug ana" id="kopyala" type="button">Kopyala</button></div></div>
+<div class="sonuc" id="sonuc" aria-live="polite"></div>
+<div class="ozet-cipler" id="ozet"></div>
+<p class="gorunmez" id="durum" aria-live="polite"></p>
+</div>
+</div>
+
+<div class="adim-baslik"><span class="no">2</span><h2>Cevabı geri çevirin</h2></div>
+<p class="adim-aciklama">Maskeli metni kullandığınız yapay zekâ aracına verin, gelen cevabı buraya yapıştırın. Etiketler yukarıda maskelediğiniz metindeki gerçek değerlere döner.</p>
+<div class="iki-panel">
+<div class="panel">
+<div class="panel-ust"><h2><label for="cevap">Gelen cevap</label></h2><div class="dugler"><button class="dug" id="ornek-cevap" type="button">Örnek cevap</button></div></div>
+<textarea id="cevap" spellcheck="false" placeholder="Yapay zekânın cevabını buraya yapıştırın…"></textarea>
+</div>
+<div class="panel">
+<div class="panel-ust"><h2>Gerçek değerlerle</h2><div class="dugler"><button class="dug ana" id="kopyala2" type="button">Kopyala</button></div></div>
+<div class="sonuc" id="acik" aria-live="polite"><span class="bos">Gerçek değerlerle cevap burada görünecek.</span></div>
+<p class="not" id="eksik"></p>
+</div>
+</div>
+
+<div class="uyari-kutu"><b>Bilmeniz gerekenler:</b> Bu araç bir ilk geçiştir. Adları yaygın Türkçe ad ve soyad listesiyle bulur; küçük harfle yazılmış ya da yabancı adlar, şirket adları ve sağlık bilgisi kaçabilir. Paylaşmadan önce sonucu okuyun. Maskeleme <a href="../rehber/maskeleme-anonimlestirme-farki/">anonimleştirme değildir</a>.</div>
+
+<div class="fark">
+<div>
+<h2>Dosyalarınız için: Ketum Masaüstü</h2>
+<p>Aynı işi Word, Excel ve UYAP dosyalarında, biçimi bozmadan yapan Windows programı. O da internete bağlanmaz.</p>
+<a class="btn" href="../indir/">Programı indirin</a>
+</div>
+<ul>
+<li>Word, Excel, CSV, PDF ve UYAP dosyaları; cevap dosya olarak da geri çevrilir</li>
+<li>Hukuk, muhasebe, İK ve müşteri hizmetleri ayarları; davacı, davalı, tanık rolleri</li>
+<li>Kaçanı fareyle ekleme, her zaman ya da hiç maskelenmeyecek listeler</li>
+<li>Şifreli kayıtlı çalışmalar ve parolalı paylaşım paketi</li>
+</ul>
+</div>
+
+<section class="sss">
+<h2>Sık sorulanlar</h2>
+<h3>Metnim bir sunucuya gönderiliyor mu?</h3>
+<p>Hayır. Maskeleme ve geri çevirme bu sayfanın içinde, tarayıcınızda yapılır; yazdığınız metin hiçbir yere gönderilmez ve kaydedilmez. İsterseniz sayfa açıldıktan sonra internet bağlantınızı kesip deneyebilirsiniz. Sitedeki istatistik aracı yalnızca sayfanın açıldığını sayar, metni görmez.</p>
+<h3>Etiketler gerçek değerlere nasıl geri döner?</h3>
+<p>Hangi etiketin hangi değere ait olduğu yalnızca bu sekmenin belleğinde tutulur. Yapay zekâdan gelen cevabı ikinci kutuya yapıştırdığınızda etiketler gerçek değerlere döner. Sayfayı yenilediğinizde ya da kapattığınızda bu eşleme silinir.</p>
+<h3>Her kişisel veriyi yakalar mı?</h3>
+<p>Hayır. T.C. kimlik, IBAN ve kart numaraları doğrulama hanesiyle, telefon, e-posta, plaka ve adresler kalıpla, adlar yaygın Türkçe ad ve soyad listesiyle bulunur. Küçük harfle yazılmış adlar, yabancı adlar, şirket adları ve sağlık bilgisi kaçabilir. Paylaşmadan önce sonucu okuyun. Maskeleme anonimleştirme değildir.</p>
+<h3>Ketum Masaüstü'nün farkı ne?</h3>
+<p>Program Word, Excel, CSV, PDF ve UYAP dosyalarını biçimini bozmadan maskeler ve geri çevirir; hukuk, muhasebe, İK ve müşteri hizmetleri için ayrı ayarları, davacı-davalı-tanık gibi rolleri, kaçanı fareyle ekleme, kayıtlı çalışmalar ve parolalı paylaşım paketi vardır. O da internete bağlanmaz.</p>
+</section>
+</div>
+<script>window.KETUM_LISTELER = {"adlar": ["Ayşe", "Mehmet", "Fatma", "Mustafa", "Emine", "Ahmet", "Hatice", "Ali", "Zeynep", "Hüseyin", "Elif", "İbrahim", "Merve", "Hasan", "Esra", "Murat", "Büşra", "Emre", "Seda", "Burak", "Selin", "Cem", "Derya", "Onur", "Gamze", "Kerem", "Pınar", "Volkan", "Ceren", "Serkan", "Tuğba", "Yusuf", "Aslı", "Koray", "Nazlı", "Tolga", "Sibel", "Okan", "Ömer", "Osman", "Halil", "Süleyman", "Yasin", "Ramazan", "Kemal", "Recep", "Abdullah", "Mahmut", "Salih", "Hakan", "Orhan", "Erkan", "Erhan", "Cengiz", "Sinan", "Levent", "Kadir", "Yunus", "Enes", "Furkan", "Berk", "Arda", "Eren", "Efe", "Kaan", "Mert", "Alp", "Batuhan", "Oğuz", "Oğuzhan", "Uğur", "Serdar", "Gökhan", "Fatih", "Tarık", "Taner", "Tuncay", "Bülent", "Halit", "Selim", "Sedat", "İsmail", "İlker", "Engin", "Ercan", "Erdem", "Özgür", "Caner", "Doğukan", "Emirhan", "Hamza", "Bilal", "Yiğit", "Alper", "Anıl", "Berkay", "Çağlar", "Çağrı", "Erdal", "Ferhat", "Gürkan", "İlhan", "Kenan", "Mesut", "Nihat", "Necati", "Rıza", "Sami", "Şükrü", "Tamer", "Turgut", "Vedat", "Zeki", "Erol", "Ayten", "Aynur", "Belgin", "Berna", "Betül", "Burcu", "Canan", "Cansu", "Dilan", "Duygu", "Ebru", "Eda", "Ela", "Elçin", "Esin", "Feride", "Filiz", "Gizem", "Gülay", "Gülsüm", "Gülten", "Gülşen", "Hande", "Havva", "Hülya", "İlknur", "İrem", "Kübra", "Leyla", "Melike", "Meltem", "Mine", "Nalan", "Nermin", "Neslihan", "Nesrin", "Nilay", "Özge", "Özlem", "Rabia", "Semra", "Sevil", "Sevim", "Songül", "Şeyma", "Şule", "Tuba", "Tülay", "Ümran", "Yeliz", "Yeşim", "Zehra", "Zerrin", "Zübeyde", "Azra", "Ecrin", "Eylül", "Hira", "Lara", "Melis", "Meryem", "Nisa", "Öykü", "Sena", "Sude", "Beren", "Buse", "Ceyda", "Didem", "Esma", "Fadime", "Funda", "Aylin", "Banu", "Bengü", "Cemre", "Ezgi", "Gökçe", "Hazal", "İpek", "Merve", "Nehir", "Simge", "Tuğçe", "Yağız", "Emir", "Kuzey", "Alperen", "Göktuğ", "Kutay", "Tuna", "Ozan", "Cihat", "Ertuğrul", "Muhammed", "Taha", "Ufuk", "Volkan", "Barlas", "Ayhan", "Aydın", "Cevdet", "Fikret", "Haluk", "Nevzat", "Remzi", "Şenol", "Tahsin", "Yaşar"], "soyadlar": ["Yılmaz", "Kaya", "Demir", "Çelik", "Şahin", "Yıldız", "Yıldırım", "Öztürk", "Aydın", "Özdemir", "Arslan", "Doğan", "Kılıç", "Aslan", "Çetin", "Kara", "Koç", "Kurt", "Özkan", "Şimşek", "Polat", "Korkmaz", "Çakır", "Erdoğan", "Güneş", "Aksoy", "Acar", "Tekin", "Bulut", "Avcı", "Özer", "Güler", "Ünal", "Keskin", "Kaplan", "Turan", "Yavuz", "Uçar", "Bozkurt", "Tunç", "Bayram", "Yücel", "Kılınç", "Ateş", "Uysal", "Coşkun", "Karaca", "Karakaya", "Karataş", "Altun", "Kalkan", "Duman", "Işık", "Akın", "Durmaz", "Ekinci", "Bilgin", "Sönmez", "Gündüz", "Aktaş", "Aksu", "Altıntaş", "Yazıcı", "Özbek", "Oral", "Önal", "Kahraman", "Sezer", "Tuna", "Gümüş", "Çiftçi", "Savaş", "Demirci", "Akgül", "Akbulut", "Arıkan", "Atalay", "Başaran", "Çınar", "Demirtaş", "Eser", "Gürbüz", "Kaçar", "Karabulut", "Kartal", "Kaymaz", "Kurtoğlu", "Özcan", "Özen", "Pektaş", "Sezgin", "Soylu", "Toptaş", "Uslu", "Ünlü", "Yalçın", "Yaman", "Yener", "Yurt", "Tunalı", "Ergin", "Güven", "Akdeniz", "Bozdağ"], "durak": ["Abim", "Abisi", "Ablam", "Ablası", "Ad", "Adana", "Adres", "Adresim", "Adıyaman", "Afyonkarahisar", "Aksaray", "Ama", "Amasya", "Ancak", "Ankara", "Annem", "Annesi", "Antalya", "Aralık", "Ardahan", "Artvin", "Avukat", "Aydın", "Ağabeyi", "Ağrı", "Ağustos", "Babam", "Babası", "Balıkesir", "Banka", "Bartın", "Batman", "Bay", "Bayan", "Bayburt", "Ben", "Bey", "Beyefendi", "Bilecik", "Bingöl", "Bir", "Bitlis", "Biz", "Bolu", "Bu", "Bulvarı", "Burdur", "Bursa", "Cadde", "Caddesi", "Cuma", "Cumartesi", "Daire", "Denizli", "Destek", "Değerli", "Diyarbakır", "Doktor", "Dr", "Düzce", "Edirne", "Ekibi", "Ekim", "Ekip", "Elazığ", "Erzincan", "Erzurum", "Eskişehir", "Evet", "Eylül", "Eşi", "Eşim", "Eşinin", "Fakat", "Fatura", "Gaziantep", "Giresun", "Gönderen", "Gümüşhane", "Günaydın", "Hakkari", "Hanım", "Hanımefendi", "Hasta", "Hastamız", "Hastanın", "Hatay", "Hayır", "Haziran", "Hesap", "Hizmetleri", "Hoca", "Hocam", "Isparta", "Iğdır", "Kahramanmaraş", "Kampanya", "Karabük", "Karaman", "Kardeşi", "Kardeşim", "Kargo", "Kars", "Kart", "Kastamonu", "Kasım", "Kat", "Kayseri", "Kilis", "Kimlik", "Kocaeli", "Kolay", "Komşum", "Komşusu", "Konu", "Konya", "Kullanıcı", "Kütahya", "Kırklareli", "Kırıkkale", "Kırşehir", "Kızı", "Kızım", "Lütfen", "Mah", "Mahallesi", "Malatya", "Manisa", "Mardin", "Mart", "Mayıs", "Mağaza", "Merhaba", "Merhabalar", "Mersin", "Muğla", "Muş", "Müdür", "Müdürü", "Müşteri", "Müşterimiz", "Nevşehir", "Nisan", "Niğde", "No", "Not", "Numara", "Numaram", "O", "Ocak", "Ordu", "Osmaniye", "Oğlu", "Oğlum", "Pazar", "Pazartesi", "Personel", "Perşembe", "Rica", "Rize", "Saat", "Sakarya", "Salı", "Samsun", "Saygılar", "Saygılarımla", "Saygılarımızla", "Sayın", "Selam", "Selamlar", "Sevgili", "Siirt", "Sinop", "Sipariş", "Siparişim", "Sivas", "Siz", "Sn", "Sok", "Sokak", "Soyad", "Tamam", "Tarih", "Tekirdağ", "Tel", "Telefon", "Temmuz", "Teşekkür", "Teşekkürler", "Tokat", "Trabzon", "Tunceli", "Türk", "Türkiye", "Uşak", "Van", "Vasisi", "Ve", "Veli", "Velisi", "Yakını", "Yakınım", "Yalova", "Yetkili", "Yetkilisi", "Yozgat", "Zonguldak", "Çalışan", "Çanakkale", "Çankırı", "Çarşamba", "Çorum", "Ödeme", "Öğrenci", "Ürün", "İade", "İlgili", "İsim", "İstanbul", "İyi", "İzmir", "Şanlıurfa", "Şu", "Şubat", "Şube", "Şırnak"], "kurum": ["A.Ş.", "AVM", "Apartmanı", "Aydınlatma", "AŞ", "Bakanlığı", "Bank", "Banka", "Bankası", "Başvuru", "Başvurusu", "Belediyesi", "Belge", "Belgesi", "Beyanname", "Bildirim", "Bildirimi", "Bilirkişi", "Bireysel", "Birimi", "Blok", "Blokları", "Blv", "Bordro", "Bordrosu", "Bulvarı", "Cad", "Caddesi", "Cafe", "Cd", "Cell", "Center", "Cevabı", "Cevap", "Daire", "Dekont", "Dekontu", "Departmanı", "Derneği", "Destek", "Dilekçe", "Dilekçemiz", "Dilekçesi", "Eczanesi", "Ekibi", "Ekip", "Ekler", "Ekleri", "Elektrik", "Elektriği", "Enerji", "Evleri", "Fatura", "Faturası", "Feragatname", "Form", "Formu", "Gaz", "Gizlilik", "Group", "Grup", "Hastanesi", "Hizmet", "Hizmeti", "Hizmetleri", "Holding", "Kafe", "Karar", "Kararı", "Kargo", "Kargosu", "Kat", "Kira", "Kiralama", "Kliniği", "Koleji", "Konutları", "Kurumsal", "Köyü", "Lojistik", "Ltd", "Mah", "Mahallesi", "Makbuz", "Makbuzu", "Market", "Marketi", "Mağaza", "Mağazası", "Merkez", "Merkezi", "Metni", "Mevkii", "Mh", "Mobil", "Mutabakat", "Mutabakatı", "Muvafakatname", "Müdürlüğü", "Net", "Noterliği", "Okulu", "Online", "Otel", "Oteli", "Planı", "Plaza", "Protokol", "Protokolü", "Rapor", "Raporu", "Restoran", "Rezidans", "Sanayi", "Satış", "Satışı", "Savunma", "Savunması", "Senedi", "Senet", "Servis", "Servisi", "Shop", "Sigorta", "Sigortası", "Sipariş", "Siparişi", "Sitesi", "Sk", "Sok", "Sokak", "Sokağı", "Store", "Sözleşme", "Sözleşmenin", "Sözleşmesi", "Taahhütname", "Taahhütnamesi", "Talimat", "Talimatı", "Teklif", "Teklifi", "Teknoloji", "Teknolojileri", "Telekom", "Tesellüm", "Teslim", "Ticaret", "Tutanak", "Tutanaklar", "Tutanağı", "Vakfı", "Vekaletname", "Vekaletnamesi", "Yazılım", "Yönetmelik", "Yönetmeliği", "Ödeme", "Özet", "Özeti", "Üniversitesi", "İhtarname", "İhtarnamesi", "İnternet", "İtiraz", "İtirazı", "Şartname", "Şartnamesi", "Şirket", "Şirketi", "Şti", "Şube", "Şubesi"]};</script>
+<script>// Ketum tarayıcı deneme motoru: metni etiketler, eşlemeyi yalnızca sayfa belleğinde tutar. Ağ isteği yapmaz.
+(function (kok) {
+  "use strict";
+  const L = kok.KETUM_LISTELER;
+  const kucuk = s => s.toLocaleLowerCase("tr");
+  const ADLAR = new Set(L.adlar.map(kucuk));
+  const SOYADLAR = new Set(L.soyadlar.map(kucuk));
+  const EK_DURAK = ("Davacı Davalı Tanık Tanığı Vekil Vekili Av Avukat Dr Doç Prof Müvekkil Müvekkilimiz Sayın Müşteri Personel " +
+    "Eşi Annesi Babası Kardeşi Oğlu Kızı Bey Hanım Katılanlar Toplantı Adres Telefon Kart Plaka Doğum Vergi Şirket Not").split(" ");
+  const DURAK = new Set(L.durak.concat(L.kurum, EK_DURAK).map(kucuk));
+  const H = "A-Za-zÇĞİÖŞÜçğıöşüÂÎÛâîû";
+  const ETIKET = { KISI: "KİŞİ", TCKN: "TCKN", TELEFON: "TELEFON", EPOSTA: "EPOSTA", IBAN: "IBAN", KART: "KART", PLAKA: "PLAKA",
+                   VKN: "VKN", DOGUM_TARIHI: "DOĞUM_TARİHİ", ADRES: "ADRES" };
+  const AKRABA = new Set("eşi annesi babası kardeşi oğlu kızı ablası ağabeyi abisi teyzesi dayısı amcası halası".split(" "));
+
+  function tcknOk(s) {
+    const d = s.replace(/\D/g, "").split("").map(Number);
+    if (d.length !== 11 || d[0] === 0) return false;
+    const t1 = (7 * (d[0] + d[2] + d[4] + d[6] + d[8]) - (d[1] + d[3] + d[5] + d[7])) % 10;
+    const t2 = d.slice(0, 10).reduce((a, b) => a + b, 0) % 10;
+    return ((t1 + 10) % 10) === d[9] && t2 === d[10];
+  }
+  function luhnOk(s) {
+    const d = s.replace(/\D/g, "");
+    if (d.length < 13 || d.length > 19) return false;
+    let t = 0;
+    for (let i = 0; i < d.length; i++) {
+      let x = +d[d.length - 1 - i];
+      if (i % 2) { x *= 2; if (x > 9) x -= 9; }
+      t += x;
+    }
+    return t % 10 === 0;
+  }
+  function ibanOk(s) {
+    const v = s.replace(/\s/g, "").toUpperCase();
+    if (!/^TR\d{24}$/.test(v)) return false;
+    const r = (v.slice(4) + v.slice(0, 4)).replace(/[A-Z]/g, c => String(c.charCodeAt(0) - 55));
+    let m = 0;
+    for (const c of r) m = (m * 10 + +c) % 97;
+    return m === 1;
+  }
+
+  // [tür, desen, grup, doğrulama]
+  const KURALLAR = [
+    ["EPOSTA", /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, 0, null],
+    ["IBAN", /\bTR\d{2}(?:\s?\d{4}){5}\s?\d{2}\b/gi, 0, ibanOk],
+    ["KART", /(?<!\d)\d{4}(?:[ -]?\d{4}){2}[ -]?\d{1,7}(?!\d)/g, 0, luhnOk],
+    ["VKN", /(?:vergi|vkn)[^\d\n]{0,20}?(?<!\d)(\d{10})(?!\d)/giu, 1, null],
+    ["DOGUM_TARIHI", /do[ğg]um[^\d\n]{0,20}?(?<!\d)(\d{1,2}[./-]\d{1,2}[./-](?:19|20)\d{2})(?!\d)/giu, 1, null],
+    ["ADRES", /(?:[A-ZÇĞİÖŞÜ][A-Za-zÇĞİÖŞÜçğıöşü]*\s){1,3}(?:Mah\.|Mahallesi|Mh\.)[^\n;]*?No\s*:?\s*\d+[A-Za-z]?(?:\s*(?:D|Daire|Kat)\s*[:.]?\s*\d+)?(?:\s+[A-ZÇĞİÖŞÜ][a-zçğıöşü]+\/[A-ZÇĞİÖŞÜ][a-zçğıöşü]+)?/gu, 0, null],
+    ["TCKN", /(?<!\d)\d{3}([ .-]?)\d{3}\1\d{3}\1\d{2}(?!\d|[.,]\d)/g, 0, tcknOk],
+    ["TELEFON", /(?<![\d+])(?:\+90[\s-]?|0090[\s-]?|0[\s-]?)?\(?5\d{2}\)?[\s.-]?\d{3}[\s.-]?(?:\d{2}[\s.-]?\d{2}|\d{4})(?!\d)/g, 0, null],
+    ["TELEFON", /(?<![\d+])(?:\+90[\s-]?|0090[\s-]?|0[\s-]?)\(?[2-4]\d{2}\)?[\s.-]?\d{3}[\s.-]?(?:\d{2}[\s.-]?\d{2}|\d{4})(?!\d)/g, 0, null],
+    ["PLAKA", /(?<![\wÇĞİÖŞÜçğıöşü])(?<!\d[.,])(?:0[1-9]|[1-7]\d|8[01]) ?(?!(?:TL|YTL|USD|EUR|GB|MB|TB|KB|KG|GR|CM|MM|ML|KM|LT|MT|HP|KW|DK|SN|SA)\b)[A-PR-VYZ]{1,3} ?\d{2,4}(?![\wÇĞİÖŞÜçğıöşü])(?![.,]\d)/g, 0, null],
+  ];
+
+  const SOZCUK = new RegExp("[" + H + "]+(?:'[" + H + "]+)?", "gu");
+  const buyukMu = w => w[0] === w[0].toLocaleUpperCase("tr") && w[0] !== w[0].toLocaleLowerCase("tr");
+  const kok_ = w => w.split("'")[0];
+
+  // Adlar: yaygın Türkçe ad + büyük harfli devam, ya da büyük harfli kelime + yaygın soyad, ya da ad + Bey/Hanım
+  function adlariBul(metin, dolu) {
+    const k = [];
+    const sz = [...metin.matchAll(SOZCUK)].filter(m => !dolu(m.index, m.index + m[0].length));
+    for (let i = 0; i < sz.length; i++) {
+      const w = kok_(sz[i][0]), wk = kucuk(w);
+      if (!buyukMu(w) || DURAK.has(wk)) continue;
+      const bitisik = (a, b) => /^[\s]+$/.test(metin.slice(a.index + a[0].length, b.index)) && !/\n/.test(metin.slice(a.index + a[0].length, b.index));
+      let j = i, ad = ADLAR.has(wk);
+      if (!ad && i + 1 < sz.length && ADLAR.has(kucuk(kok_(sz[i + 1][0])))) continue;
+      // ikinci ad ve soyadlar
+      while (j + 1 < sz.length && j - i < 2 && bitisik(sz[j], sz[j + 1])) {
+        const s = kok_(sz[j + 1][0]);
+        if (!buyukMu(s) || DURAK.has(kucuk(s))) break;
+        if (!(ad || SOYADLAR.has(kucuk(s)) || ADLAR.has(kucuk(s)))) break;
+        j++;
+        if (sz[j][0].includes("'")) break;
+      }
+      if (j > i && (ad || SOYADLAR.has(kucuk(kok_(sz[j][0]))))) {
+        const bas = sz[i].index, son = sz[j].index + kok_(sz[j][0]).length;
+        k.push([bas, son, "KISI", metin.slice(bas, son)]);
+        i = j;
+      } else if (ad && i > 0 && AKRABA.has(kucuk(sz[i - 1][0]))) {
+        k.push([sz[i].index, sz[i].index + w.length, "KISI", w]);
+      } else if (ad && i + 1 < sz.length && /^(Bey|Hanım|Bey'|Hanım')/.test(sz[i + 1][0]) && bitisik(sz[i], sz[i + 1])) {
+        k.push([sz[i].index, sz[i].index + w.length, "KISI", w]);
+      }
+    }
+    return k;
+  }
+
+  function maskele(metin) {
+    const bulunan = [];
+    const dolu = (a, b) => bulunan.some(x => a < x[1] && b > x[0]);
+    for (const [tur, rx, g, ok] of KURALLAR) {
+      for (const m of metin.matchAll(rx)) {
+        const v = m[g], bas = m.index + m[0].indexOf(v), son = bas + v.length;
+        if (ok && !ok(v)) continue;
+        if (dolu(bas, son)) continue;
+        bulunan.push([bas, son, tur, v.trim()]);
+      }
+    }
+    for (const x of adlariBul(metin, dolu)) bulunan.push(x);
+    // Tek başına geçen soyadlar aynı kişiye bağlanır ("Davalı Kılıç'ın")
+    const soyad = new Map();
+    for (const x of bulunan) if (x[2] === "KISI") {
+      const p = x[3].split(/\s+/); if (p.length > 1) soyad.set(p[p.length - 1], x[3]);
+    }
+    for (const [s, tam] of soyad) {
+      if (s.length < 3 || DURAK.has(kucuk(s))) continue;
+      const rx = new RegExp("(?<![" + H + "])" + s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(?![" + H + "])", "gu");
+      for (const m of metin.matchAll(rx)) {
+        if (!dolu(m.index, m.index + s.length)) bulunan.push([m.index, m.index + s.length, "KISI", tam]);
+      }
+    }
+    bulunan.sort((a, b) => a[0] - b[0]);
+    const esleme = {}, anahtar = {}, sayac = {};
+    const norm = (tur, v) => tur === "KISI" ? kucuk(v.replace(/\s+/g, " ")) : v.replace(/[\s.()-]/g, "").replace(/^(\+90|0090|90)/, "0");
+    const parcalar = [];
+    let son = 0;
+    for (const [bas, bit, tur, v] of bulunan) {
+      const key = tur + "|" + norm(tur, v);
+      if (!anahtar[key]) {
+        sayac[tur] = (sayac[tur] || 0) + 1;
+        anahtar[key] = "[" + ETIKET[tur] + "_" + sayac[tur] + "]";
+        esleme[anahtar[key]] = { tur, deger: v };
+      }
+      parcalar.push({ metin: metin.slice(son, bas) });
+      parcalar.push({ metin: anahtar[key], etiket: true, tur, ozgun: metin.slice(bas, bit) });
+      son = bit;
+    }
+    parcalar.push({ metin: metin.slice(son) });
+    return { maskeli: parcalar.map(p => p.metin).join(""), parcalar, esleme, sayac };
+  }
+
+  function geriCevir(metin, esleme) {
+    let bulunamayan = new Set(), cevrilen = 0;
+    const cikti = metin.replace(/\[([A-ZÇĞİÖŞÜ_]+_\d+)\]/g, (t) => {
+      if (esleme[t]) { cevrilen++; return esleme[t].deger; }
+      bulunamayan.add(t); return t;
+    });
+    return { metin: cikti, cevrilen, bulunamayan: [...bulunamayan] };
+  }
+
+  kok.KetumDeneme = { maskele, geriCevir, tcknOk, ibanOk, luhnOk };
+})(typeof window !== "undefined" ? window : globalThis);
+</script>
+<script>
+(function(){
+  const K = window.KetumDeneme, $ = id => document.getElementById(id);
+  let esleme = {};
+  const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const ADI = {KISI:"kişi",TCKN:"T.C. kimlik",TELEFON:"telefon",EPOSTA:"e-posta",IBAN:"IBAN",KART:"kart",PLAKA:"plaka",VKN:"vergi no",DOGUM_TARIHI:"doğum tarihi",ADRES:"adres"};
+  function maskele(){
+    const t = $("girdi").value;
+    if (!t.trim()) { esleme = {}; $("sonuc").innerHTML = '<span class="bos">Maskeli metin burada görünecek.</span>'; $("ozet").innerHTML = ""; return; }
+    const r = K.maskele(t); esleme = r.esleme;
+    $("sonuc").innerHTML = r.parcalar.map(p => p.etiket ? '<span class="et" title="' + esc(p.ozgun) + '">' + esc(p.metin) + '</span>' : esc(p.metin)).join("");
+    $("sonuc").dataset.metin = r.maskeli;
+    const say = Object.entries(r.sayac);
+    $("ozet").innerHTML = say.length ? say.map(([t,n]) => "<span>" + n + " " + ADI[t] + "</span>").join("") : "<span>Kişisel veri bulunamadı</span>";
+    $("durum").textContent = say.length ? (say.reduce((a,[,n])=>a+n,0) + " farklı bilgi etiketlendi.") : "Kişisel veri bulunamadı.";
+  }
+  let zaman; $("girdi").addEventListener("input", () => { clearTimeout(zaman); zaman = setTimeout(maskele, 250); });
+  $("ornek").addEventListener("click", () => { $("girdi").value = $("girdi").dataset.ornek; maskele(); });
+  $("temizle").addEventListener("click", () => { $("girdi").value = ""; $("cevap").value = ""; $("acik").innerHTML = '<span class="bos">Gerçek değerlerle cevap burada görünecek.</span>'; $("eksik").textContent = ""; maskele(); });
+  async function kopyala(metin, dug){ try { await navigator.clipboard.writeText(metin); const e = dug.textContent; dug.textContent = "Kopyalandı"; setTimeout(() => dug.textContent = e, 1400); } catch(_) { dug.textContent = "Kopyalanamadı"; } }
+  $("kopyala").addEventListener("click", e => kopyala($("sonuc").dataset.metin || "", e.currentTarget));
+  function cevir(){
+    const t = $("cevap").value;
+    if (!t.trim()) { $("acik").innerHTML = '<span class="bos">Gerçek değerlerle cevap burada görünecek.</span>'; $("eksik").textContent = ""; return; }
+    const r = K.geriCevir(t, esleme);
+    let html = esc(t).replace(/\[([A-ZÇĞİÖŞÜ_]+_\d+)\]/g, m => esleme[m] ? '<span class="geri-deger">' + esc(esleme[m].deger) + '</span>' : '<span class="et">' + m + '</span>');
+    $("acik").innerHTML = html; $("acik").dataset.metin = r.metin;
+    $("eksik").textContent = !Object.keys(esleme).length ? "Önce yukarıda bir metin maskeleyin; etiketlerin karşılığı o metinden gelir." :
+      (r.bulunamayan.length ? "Bu etiketler maskelediğiniz metinde yok, olduğu gibi bırakıldı: " + r.bulunamayan.join(", ") : (r.cevrilen ? r.cevrilen + " etiket gerçek değerine döndü." : ""));
+  }
+  let zaman2; $("cevap").addEventListener("input", () => { clearTimeout(zaman2); zaman2 = setTimeout(cevir, 250); });
+  $("ornek-cevap").addEventListener("click", () => {
+    const k = Object.keys(esleme).filter(e => e.startsWith("[KİŞİ")), t = Object.keys(esleme).find(e => e.startsWith("[TCKN")), p = Object.keys(esleme).find(e => e.startsWith("[TELEFON"));
+    if (!k.length) { $("girdi").value = $("girdi").dataset.ornek; maskele(); return $("ornek-cevap").click(); }
+    $("cevap").value = "Özet: " + k[0] + " ile " + (k[1] || "karşı taraf") + " arasındaki uyuşmazlıkta kira bedelinin ödenmediği anlaşılıyor. " + (t ? k[0] + "'in kimlik numarası " + t + " olarak dilekçeye yazılmalı. " : "") + (p ? "İletişim için " + p + " kullanılabilir." : "");
+    cevir();
+  });
+  $("kopyala2").addEventListener("click", e => kopyala($("acik").dataset.metin || "", e.currentTarget));
+  maskele();
+})();
+</script>
+
+</main>
+<footer><div class="ic">
+<span>Ketum · <a href="mailto:ketumveri@hotmail.com">ketumveri@hotmail.com</a></span>
+<p>Rehber yazıları genel bilgilendirme amaçlıdır, hukuki görüş değildir. Bu web sitesinde çerez kullanmayan ve sizi tanımlamayan bir ziyaret istatistiği aracı (Cloudflare Web Analytics) kullanılır.</p>
+</div></footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "d4f85b3ae92f4b23bec7610f5724673a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
